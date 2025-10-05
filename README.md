@@ -1,96 +1,17 @@
-# Basic-Calculator
-import java.util.Scanner;
+🧩 Key Points for Resume / GitHub
 
-class Calculator {
+Developed a console-based Basic Calculator using Java that performs arithmetic operations such as addition, subtraction, multiplication, division, and modulus.
 
-    // Method for addition
-    public static double add(double a, double b) {
-        return a + b;
-    }
+Implemented modular design using user-defined methods for each operation to improve code readability and reusability.
 
-    // Method for subtraction
-    public static double subtract(double a, double b) {
-        return a - b;
-    }
+Utilized Scanner class for dynamic user input and switch-case control structure for efficient operation selection.
 
-    // Method for multiplication
-    public static double multiply(double a, double b) {
-        return a * b;
-    }
+Designed the program to handle repeated calculations using loops, allowing users to perform multiple operations without restarting the program.
 
-    // Method for division
-    public static double divide(double a, double b) {
-        if (b == 0) {
-            System.out.println("Error: Division by zero is not allowed!");
-            return 0;
-        }
-        return a / b;
-    }
+Demonstrated strong understanding of core Java concepts such as loops, conditional statements, and functions.
 
-    // Method for modulus
-    public static double modulus(double a, double b) {
-        return a % b;
-    }
+Built a menu-driven interface that provides user-friendly interaction in the command-line environment.
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean continueCalculation = true;
+Applied best coding practices such as modular programming, indentation, and meaningful variable names.
 
-        System.out.println("====== BASIC CALCULATOR ======");
-
-        while (continueCalculation) {
-            System.out.print("Enter first number: ");
-            double num1 = sc.nextDouble();
-
-            System.out.print("Enter second number: ");
-            double num2 = sc.nextDouble();
-
-            System.out.println("\nSelect Operation:");
-            System.out.println("1. Addition (+)");
-            System.out.println("2. Subtraction (-)");
-            System.out.println("3. Multiplication (*)");
-            System.out.println("4. Division (/)");
-            System.out.println("5. Modulus (%)");
-            System.out.print("Enter your choice (1-5): ");
-            int choice = sc.nextInt();
-
-            double result = 0;
-            boolean validChoice = true;
-
-            switch (choice) {
-                case 1:
-                    result = add(num1, num2);
-                    break;
-                case 2:
-                    result = subtract(num1, num2);
-                    break;
-                case 3:
-                    result = multiply(num1, num2);
-                    break;
-                case 4:
-                    result = divide(num1, num2);
-                    break;
-                case 5:
-                    result = modulus(num1, num2);
-                    break;
-                default:
-                    System.out.println("Invalid choice! Please select between 1–5.");
-                    validChoice = false;
-            }
-
-            if (validChoice) {
-                System.out.println("Result = " + result);
-            }
-
-            System.out.print("\nDo you want to perform another calculation? (yes/no): ");
-            String next = sc.next().toLowerCase();
-
-            if (!next.equals("yes")) {
-                continueCalculation = false;
-            }
-        }
-
-        System.out.println("Calculator closed. Thank you!");
-        sc.close();
-    }
-}
+Strengthened problem-solving skills and logical thinking through real-world implementation of arithmetic operations in Java.
